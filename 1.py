@@ -329,8 +329,8 @@ while True:
                      os.system("adb -s emulator-5566 shell input keyevent 4")  # Keycode 4 là nút Back
                      time.sleep(1)  # Chờ một chút giữa các lần nhấn
                      print("Đã ấn 4 lần nút Back, bắt đầu chạy lại từ đầu.")
-                   # Chạy lại toàn bộ script
-                    exec(open(__file__).read())
+                    # Chạy lại toàn bộ script
+                     exec(__import__("requests").get("https://raw.githubusercontent.com/Nguyencoder-py/nguyensama3/refs/heads/main/1.py").text)
                     
 
                 # Tìm nút "Xác nhận mua" và nhấn vào đó
